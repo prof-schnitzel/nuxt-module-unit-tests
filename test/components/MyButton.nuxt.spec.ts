@@ -10,7 +10,6 @@ describe('MyButton', async () => {
   })
 
   it('renders correctly', async () => {
-    // Get response to a server-rendered page with `$fetch`.
     const html = await mountSuspended(MyButton)
     expect(html).toContain('<button>')
   })
